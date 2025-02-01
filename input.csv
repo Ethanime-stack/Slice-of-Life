@@ -1,0 +1,12 @@
+Item #,Name,Type,Make,Model,Brand,Description
+100,Service One,Service,,,Programming Consultation,1 hour of consulting on web design concepts
+101,Service Two,Service,,,Programming Consultation,5 hours of consulting on web design concepts
+102,ProgCalc,Product,Casio,2020,,Programmable calculator
+103,ProgBook,Book,,,O'Reilly,A book on web design concepts
+104,Red,Car,F1,Ferrari,Ferrari,Ferrari F1 Car 
+105,Computer,Computer,HP,E100,HP,A computer 
+106,Service Three,Service,,,Programmer,Creates a whole program for free
+107,Service Four,Service,,,Programmer,10 second consult
+108,Hockey,Practice,,,Training,Training for Hockey
+109,Basketball,Practice,,,Training,Training for Basketball
+110,Golf,Practice,,,Training,Training for Golf

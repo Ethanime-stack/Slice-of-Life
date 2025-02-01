@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
+
+<title>Home</title>
+
+
+<script>
+    function redirectContact(){
+        window.location.href= 'contact.html';
+    }
+
+</script>
+
+<style>
+    #myUL {
+        display: none;
+    } table {
+    display: none;
+    }
+</style>
+</head>
+<body>
+
+
+    <div class="navbar">
+        <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="aboutme.html">About</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">Products
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="currency.php">Currency exchange</a>
+                <a href="#">Service 2</a>
+            </div>
+            </div>
+
+        
+            <div class="dropdown">
+                <button class="dropbtn" onclick="redirectContact()"> Contact Us 
+                <i class="fa fa-caret-down"></i></button>
+                
+                <div class="dropdown-content">
+                    <a href="contact.html">Contactez-nous <span class="fi fi-fr"></span></a> 
+                    <a href="contact.html">問い合わせ <span class="fi fi-jp"></span></a>
+            </div>
+        </div>
+    </div>
+
+<div id="Greeting">
+    <script>
+        function setGreetingMessage(){
+            const messageContainer = document.getElementById("Greeting");
+            const now = new Date();
+            const hours = now.getHours();
+
+            let message = "";
+            if (hours > 0 && hours <= 6) {
+                message = "Good morning, you must be an early bird!";
+            } else if (hours > 6 && hours <= 12) {
+                message = "Good morning";
+            } else if (hours > 12 && hours <= 18){
+                message = "Good afternoon";
+            } else {
+                message = "Good evening";
+            }
+
+            messageContainer.textContent = message;
+        }
+
+        window.onload = setGreetingMessage;
+    </script>
+</div>
+
+
+
+    <div id="Welcome">
+        <p>Welcome to the site. Please use the below search bar to find relevant products, pages, and people.</p>
+    </div>
+
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search... ">
+    <ul id="myUL"></ul> 
+
+
+
+    <!-- note to self: reminder to eventually fix or add functionality back to search other pages. -->
+
+
+
+
+
+
+
+
+
+</body>
+</html>
